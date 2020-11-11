@@ -21,4 +21,4 @@ let randomNumber = Math.random();
 randomNumber *= 3; 
 randomNumber = Math.floor(randomNumber);
 randomNumber ++;
-console.log(randomNumber); git commit
+console.log(randomNumber); 
