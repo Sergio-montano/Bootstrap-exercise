@@ -125,7 +125,7 @@ function getRandomUpper() {
   
     console.log(length, hasUpper, hasLower, hasNumber, hasSymbol);
   
-    //
+    // generatePassword function takes the true/false values determined by the checkboxes as well as the number from the number input as arguments and returns a string (A.K.A. The generated password) which is set as the innerText value for the result element/span
     resultEl.innerText = generatePassword(
       hasUpper,
       hasLower,
@@ -133,7 +133,6 @@ function getRandomUpper() {
       hasSymbol,
       length
     );
-  
   });
   
   
