@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+
+<body>
+  <!-- Action is where the info is being sent or retrieved from (Like a web address) -->
+  <!-- Method determines whether it will be sending or retrieving data -->
+  <form action="www.espn.com" method="GET/POST"></form>
+
+  <!-- Input tags do not have a closing tag and use the type attribute to determine the type of input -->
+  <!-- <input> -->
+
+  <h1>Login</h1>
+
+  <!-- Form tags are block level elements -->
+  <form>
+    <!-- Name attribute is used to send info from input to destination -->
+    <input name="login" type="text" placeholder="username">
+    <input name="login" type="password" placeholder="password">
+    <input type="submit">
+  </form>
+
+  <!-- Used with inputs to alert user what input tag is for -->
+  <label for=""></label>
+
+  <div>
+    <!-- 1st way to use a label -->
+    <label>
+      First Name
+      <input type="text">
+    </label>
+  </div>
+
+  <div>
+    <!-- 2nd way to use a label -->
+    <!-- The for and id attributes are used to link/bind label and inputs -->
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName">
+  </div>
+
+  <form>
+    <!-- Required attribute (Requires user to complete input field before form will be sent) -->
+    <input type="text" required>
+    <input type="submit">
+  </form>
+
+  <hr>
+
+  <h2>Other inputs</h2>
+  <form>
+    <label for="userEmail">Email</label>
+    <input type="email" id="userEmail" placeholder="email" required>
+    <label for="userCheckbox">Checkbox</label>
+    <input type="checkbox" id="userCheckbox" required>
+    <label for="userRadio">Radio</label>
+    <input id="userRadio" name="radioLink" type="radio">
+    <input id="userRadio" name="radioLink" type="radio">
+    <label for="userColor">Color</label>
+    <input id="userColor" type="color">
+    <label for="userNumber">Number</label>
+    <input id="userNumber" type="number" value="1">
+    <label for="userDate">Date</label>
+    <input id="userDate" type="date">
+    <input type="submit">
+  </form>
+</body>
+
+</html>

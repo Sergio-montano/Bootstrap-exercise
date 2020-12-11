@@ -1,0 +1,106 @@
+/* STAR SELECTOR */
+/* Sets style for every element in the HTML file */
+* {
+  border-left: 3px solid blueviolet;
+}
+
+/* MULTIPLE SELECTORS */
+/* Sets the style for muliple selectors at once */
+/* This is helpful to condense your amount of lines and styles in your CSS file */
+h1, h3 {
+  background-color: hotpink;
+}
+
+/* Same as this below... */
+/* h1 {
+  background-color: hotpink;
+}
+h3 {
+  background-color: hotpink;
+} */
+
+/* ATTRIBUTE */
+/* Sets style for selectors that have a certain attribute value */
+a[href="https://www.rottentomatoes.com/top-tv"]{
+  border-top: 4px solid #f02;
+  /* Same as #ff0022 */
+}
+
+/* DECENDANT SELECTOR */
+/* Sets style for selector (2nd specificed selector) nested in another selector (1st specified). Even if they are nested more than one level */
+div h2 {
+  color: red;
+}
+
+ol ul li {
+  border-right: 6px dotted #11f;
+}
+
+/* SPECIFIC ELEMENT WITH A CLASS */
+/* Sets style for only a specific element that has a class */
+/* Class must be applied to more than one element for this to be useful */
+li.yellow {
+  background-color: yellow;
+}
+
+/* GENERAL SIBLING SELECTOR */
+/* Set style for all following elements (ol in this case) that are siblings of the specified element (h3 in this case) */
+h3 ~ ol {
+  border-bottom: 6px solid green;
+}
+
+/* ADJACENT SIBLING SELECTOR */
+/* Same as general sibling selector. However, it will only affect the element immediately following the specified element */
+h3 + ol {
+  border-bottom: 6px solid black;
+}
+
+/* NTH OF TYPE */
+/* Styles every element that is a specified nth child (Number your provide) of a specified type (Selector you provide) of it's parent */
+/* So in this case 3rd li is styled including "CBS" because it is the 3rd li in the order list of TV stations */
+li:nth-of-type(3) {
+  border-bottom: 4px solid greenyellow;
+}
+
+/* Can also have it apply to multiple by using odd, even, or a number followed by n (Ex: 3n) */
+/* li:nth-of-type(even) {
+  border-bottom: 4px solid greenyellow;  
+} */
+
+/* NTH CHILD */
+/* Styles all elements that are the nth child (Number you provide) of the parent. Regardless of type */
+/* So in this case the ul with ESPN shows is styled. The ESPN li would be the nth-child(1) */
+ul:nth-child(2) {
+  background-color: orange;
+}
+
+/* ul:first-child {
+  background-color: orange;
+}
+ul:last-child {
+  background-color: orange;
+} */
+
+/* CHILD SELECTOR */
+/* Styles all elements (2nd selector you provide) that are children of specified selector (1st selector you provide) */
+/* So in this case only the h2 nested directly in the div is styled */
+div > h2 {
+  color: blue;
+}
+
+/* PSEUDO CLASSES */
+/* When element is hovered over with cursor the style is applied */
+h2:hover {
+  background-color: green;
+}
+
+/* When element is clicked (Focused into) the style is applied */
+input:focus {
+  background-color: rgba(25, 50, 200, 0.2);
+}
+
+/* PSEUDO-ELEMENTS */
+h1::first-letter {
+  color: greenyellow;
+}
+

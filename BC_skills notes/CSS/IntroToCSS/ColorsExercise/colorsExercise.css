@@ -1,0 +1,19 @@
+h1 {
+  color: green;
+}
+
+h2 {
+  color: #04f92b;
+}
+
+p {
+  color: rgb(0, 14, 255);
+}
+
+li {
+  color: rgba(135, 196, 4, 0.5);
+}
+
+h6:first-of-type {
+  color: hotpink;
+}

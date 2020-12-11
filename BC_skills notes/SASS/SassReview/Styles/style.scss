@@ -1,0 +1,24 @@
+// Importing partial file
+@import "values";
+
+.eighties {
+  background-color: blue;
+  font-weight: bold;
+  // NESTING
+  h1 {
+    color: white;
+  }
+  ul {
+    color: $color;
+    border: 3px solid $color;
+  }
+}
+
+.nineties {
+  // Mixin
+  @include flex(center, center);
+  ul {
+    // Extendable Class
+    @extend %colors;
+  }
+}

@@ -1,0 +1,14 @@
+/* The name of your css file should match the name of your component/file name */
+
+.Styles {
+  border: 10px dashed gold;
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* The red text color style only applies to the h1 in the Styles component/div */
+.Styles h1 {
+  color: red;
+  background-color: green;
+}
+

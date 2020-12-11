@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non Inputs</title>
+</head>
+
+<body>
+  <form>
+    <!-- Select elements have opening and closing tags. Must create option elements inside of those tags -->
+    <label for="fastFood">Favorite Fast Food in Glasgow</label>
+    <select name="fastFood" id="fastFood">
+      <!-- hidden attribute will make the option not display after user clicks on select element -->
+      <option hidden value="">Select a restaurant</option>
+      <option value="mcdonalds">McDonalds</option>
+      <option value="burgerKing">Burger King</option>
+      <option value="tacoBell">Taco Bell</option>
+      <option value="Wendys">Wendy's</option>
+    </select>
+    <br>
+    <label>
+      How are you feeling?
+      <select name="mood">
+        <option value="sad">☹️</option>
+        <option value="happy">😄</option>
+        <option value="angry">😠</option>
+      </select>
+    </label>
+    <br>
+    <!-- Text box where user can type -->
+    <label for="joke">Tell me a funny joke:</label>
+    <textarea name="joke" id="joke" rows="5" cols="5">Type the joke here</textarea>
+    <br>
+    <!-- Unlike a submit input, you can put content in a button tag. Button tag will also submit form values -->
+    <button>Click Here</button>
+
+    <!-- Field set is used to group related elements on a page -->
+    <fieldset>
+      <legend>School Lunch options</legend>
+      <label for="drink">Drink:</label>
+      <select name="drink" id="drink">
+        <option value="wholeMilk">Whole Milk</option>
+        <option value="chocolateMilk">Chocolate Milk</option>
+      </select>
+      <label for="food">Food:</label>
+      <select name="food" id="food">
+        <option value="hot">Hot</option>
+        <option value="cold">Cold</option>
+      </select>
+    </fieldset>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+/* Element/Tag selector */
+li {
+  border: 8px dotted saddlebrown;
+}
+
+/* id selector */
+/* id selector is used to style a single specific element */
+#favorite {
+  background-color: cyan;
+}
+
+/* class selector */
+/* The class selector is used to style mulitple elements */
+.vintage {
+  background-color: blanchedalmond;
+}
+

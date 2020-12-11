@@ -1,0 +1,26 @@
+// This is a SASS partial file
+
+// SASS Variable
+$color1: #4cbb17;
+
+// CSS Variable
+// --color1: #4cbb17;
+// var(--color1)
+
+// SASS Mixin
+@mixin flex ($position) {
+  display: flex;
+  justify-content: $position;
+  align-items: $position;
+}
+
+@mixin colors {
+  color: blue;
+  border: 3px solid rebeccapurple;
+}
+
+// Extendable class (AKA Inheritance)
+%colors {
+  color: blue;
+  border: 3px solid rebeccapurple;  
+}

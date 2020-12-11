@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms 2</title>
+</head>
+
+<body>
+  <!-- Forms are used to send data somewhere to be stored or to return some data for the user -->
+  <!-- Form elements are used to group together inputs and non inputs elements -->
+  <form>
+    <!-- The type attribute determines what kind of input it is -->
+    <!-- Only form elements with the name attribute will have their values passed when submitting a form -->
+    <input name="firstName" type="text">
+
+    <!-- name attributes in radio inputs much match for the user to be able to select between them -->
+    <!-- must specify a value attribute for radio inputs to have an actual value passed when submitting a form -->
+    <input value="green" name="color" type="radio">
+    <input value="blue" name="color" type="radio">
+
+    <!-- labels are used as captions for inputs -->
+    <!-- 1st way to use a label is to nest input inside of label tags -->
+    <label>Full Name
+      <input type="text">
+    </label>
+
+    <!-- 2nd way to use a label is to use the for and id attributes. Text inside the two attributes must match. -->
+    <label for="fullName">Full Name</label>
+    <input id="fullName" type="text">
+
+    <!-- Password input has a pattern attribute that allows you to specify a length for the password. Must also use a title attribute when using pattern. Requried attribute must be used when an input needs to be filled in -->
+    <input pattern=".{5,10}" title="Must be between 5 and 10 characters" type="password" required>
+
+    <!-- Every forms needs to have a submit input or some way to activate the submitting of the values in the form -->
+    <input type="submit">
+  </form>
+</body>
+
+</html>

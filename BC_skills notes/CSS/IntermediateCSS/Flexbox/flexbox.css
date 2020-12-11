@@ -1,0 +1,71 @@
+div div {
+  width: 200px;
+  margin: 10px;
+  border: 3px solid black;
+  font-size: 25px;
+}
+
+.container {
+  background-color: #999;
+  /* display: flex creates a flexbox container */
+  /* Flexbox always has a main axis and cross axis. Main axis is horizontal and cross axis is vertical when you start (Ex: display: flex) */
+  display: flex;
+
+  /* Justify content will determine how the elements are set along the main axis (Horizontal axis in this case). (flex-start, flex-end, center, space-between, and space-around) flex-start is the default value */
+  /* justify-content: space-around; */
+
+  /* align items will determine how the elements are set along the cross axis (Vertical axis in this case). Stretch is the default value */
+  /* align-items: center; */
+
+  /* Wraps items that cannot fit onto next line */
+  /* flex-wrap: wrap; */
+
+  /* Align content is used like "align items" for elements that are being wrapped */
+  /* align-content: center; */
+  
+  /* height: 750px; */
+
+  /* Changes flex items into a column (Stacked vertically) */
+  /*
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  */
+}
+
+.red {
+  background-color: red;
+  min-height: 100px;
+
+  /* flex shrink determines if a flexbox will shrink and how much it will shrink. 1 is the default value */
+  /* flex-shrink: 0; */
+
+  /* order allows us to change the order of the flexbox items in their container */
+  /* order: 3; */
+
+  /* FLEXBOX SHORTHAND PROPERTY */
+  /* flex grow, flex shrink, flex basis */
+  flex: 0 2 200px;
+}
+
+.green {
+  background-color: green;
+  min-height: 200px;
+  /* flex grow determines if a flexbox will grow and how much it will grow. 0 is the default value */
+  /* flex-grow: 1; */
+  
+  /* Flex basis determines where the flex grow property starts from */
+  /* flex-basis: 0; */
+  
+  /* align self allows you to set the align item property on a single flexbox item */
+  /* align-self: center; */
+  /* order: 1; */
+}
+
+.blue {
+  background-color: blue;
+  min-height: 300px;
+  /* flex-grow: 2; */
+  /* flex-basis: 0; */
+  /* order: 2; */
+}

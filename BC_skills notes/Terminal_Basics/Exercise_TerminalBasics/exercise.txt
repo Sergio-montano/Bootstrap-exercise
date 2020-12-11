@@ -1,0 +1,12 @@
+TERMINAL BASICS EXERCISE
+
+1. Create a new directory/folder called "Marvel"
+2. Inside "Marvel" add 2 directories/folders: "Avengers" and "Villians"
+3. Inside "Avengers" create these files: "captainAmerica.txt", "blackWidow.txt", "ironMan.txt, and "happy.txt"
+4. Create a new directory/folder inside "Avengers" called "moreAvengers"
+5. Inside "moreAvengers" create these files: "falcon.txt", "doctorStrange.txt", and "blackPanther.txt"
+6. Get to the "Villians" directory/folder and create these files: "thanos.txt", "ultron.txt", "loki.txt" inside of it
+7. You decide Happy is not actually an Avenger. Remove the "happy.txt" file.
+8. Uh oh, Thanos snapped his fingers and now Falcon, Doctor Strange, and Black Panther are gone! Delete the "moreAvengers" directory/folder.
+
+BONUS: Try to complete using the fewest commands lines as possible (Basically fewest times hitting enter)
