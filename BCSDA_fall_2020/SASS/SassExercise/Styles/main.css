@@ -1,0 +1,43 @@
+.characters h1:hover, .middle-earth h1, .middle-earth h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.characters {
+  background-color: tan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.characters h1 {
+  color: #ddd;
+}
+
+.characters h2 {
+  background-color: #964b00;
+}
+
+.characters h3 {
+  color: #964b00;
+}
+
+.middle-earth {
+  background-color: silver;
+}
+
+.middle-earth h1 {
+  text-decoration: underline;
+  margin-bottom: 100px;
+}
+
+.middle-earth h2 {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+* {
+  /* Removes all padding and margin on all elements */
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
+}
+
+.indigo {
+  background-color: indigo;
+  border: 40px solid fuchsia;
+  padding: 30px;
+  margin: 50px;
+  /* Width and height determine the size of an elements content */
+  width: 200px;
+  height: 200px;
+  /* display: inline; */
+  /* The box-sizing: border-box style allows us to include the padding and border in an element's width and height */
+  box-sizing: border-box;
+}
+
+
+.firebrick {
+  background-color: firebrick;
+  border: 40px solid orange;
+  padding: 30px;
+  width: 200px;
+  height: 200px;
+  /* Elements collapse or share the vertical space between them. It will use the larger margin value. */
+  margin: 50px;
+  /* display: inline; */
+}
+
+

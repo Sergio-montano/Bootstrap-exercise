@@ -1,0 +1,21 @@
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: seagreen;
+  /* Must specify the property you changing or you can use 'all' if you want your transition settings to apply to all transitioning elements */
+  /* transition-property: width; */
+  transition-property: all;
+  transition-delay: 1s;
+  transition-duration: 2s;
+  /* linear is the default value */
+  transition-timing-function: ease-in;
+  /* Order for transition shorthand property: property duration timing-function delay */
+  transition: all 2s ease-in 1s;
+}
+
+.container:hover {
+  width: 600px;
+  height: 600px;
+  background-color: steelblue;
+  transform: rotate(720deg);
+}

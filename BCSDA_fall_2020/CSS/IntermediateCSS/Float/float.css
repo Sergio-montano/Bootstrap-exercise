@@ -1,0 +1,17 @@
+img {
+  /* Either will scale image up or down. If width and height are both used it will distort picture */
+  width: 500px;
+  /* height: 500px; */
+
+  /* Float takes the element out of the normal document flow. Also, removes the "mystery space" (Not margin or padding) between elements */
+  float: left;
+  /* float: right; */
+
+}
+
+div {
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  float: left;
+}

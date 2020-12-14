@@ -1,0 +1,49 @@
+div {
+  font-size: 50px;
+  padding: 20px;
+}
+
+.container {
+  background-color: rgb(105, 94, 94);
+  margin: 20px;
+  position: relative;
+  margin-bottom: 1000px;
+}
+
+.red {
+  background-color: #f00;
+  /* Static is the default position property */
+  /* position: static; */
+
+  /* Relative allows us to move the element relative to its normal location with the top, right, bottom, and left properties */
+  /* position: relative; */
+  /* top: 50px; */
+  /* left: 50px; */
+
+  /* Absolute completely removes the element from the document flow, but still displays element on screen */
+  /* When an element has an absolute position value it will position itself relative to the first parent element with a position value other than static */
+  /* Must include top, right, bottom, or left for absolute location to take affect */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+
+  /* Fixed like absolute also completely removes the element from the document flow. However unlike absolute it will alway position itself relative to the root element of the page (Ex: body element). Also, fixed will force element to remain in same location as you scroll. */
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
+
+  /* Sticky works like relative however when the element hit the top of the screen as you scroll it will stick at the top */
+  /* position: sticky; */
+  top: 0;
+  left: 0;
+
+}
+
+.green {
+  background-color: #0f0;
+}
+
+.blue {
+  background-color: #00f;
+}
+

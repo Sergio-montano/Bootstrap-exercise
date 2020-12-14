@@ -1,0 +1,21 @@
+h1::before {
+  /* Must include 'content' property when using :before or :after pseudo selectors */
+  content: 'Content BEFORE element';
+  /* display: block; */
+}
+
+h1::after {
+  content: 'Content AFTER element';
+  /* display: block; */
+}
+
+/* Pseudo selectors can be used together */
+/* .asterisk:hover::after { */
+.asterisk::after {
+  content: '*';
+}
+
+/* Pseudo selectors cannot be used on elements with self-closing tags */
+input::after {
+  content: 'This will not be shown';
+}

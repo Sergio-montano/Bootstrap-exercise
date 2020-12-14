@@ -1,0 +1,41 @@
+/* Color Name */
+/* h1 {
+  color: papayawhip;
+} */
+
+/* Hexadecimal */
+/* Example: #09FB23 */
+/* # + 6 hexadecimal numbers/characters */
+/* Hexidecimal number/character goes from zero to the letter F */
+/* 0123456789ABCDEF */
+
+/* First two determine the amount of Red */
+/* Middle two determine the amount of Green */
+/* Last two determine the amount of Blue */
+
+/* Colors work as if they are light not paints */
+/* #FFFFFF would be white */
+/* #000000 would be black */
+h1 {
+  /* This is green */
+  color: #00FF00;
+}
+
+/* RGB (Red, Green, Blue) */
+/* Example: rgb(0, 14, 255) */
+/* RGB has 3 channels/spots */
+/* rgb(#,#,#) */
+/* Each goes from 0-255 */
+h1 {
+  /* This is blue */
+  color: rgb(0,0,255);
+}
+
+/* RGBA (Red, Green, Blue, Alpha) */
+/* Example: rgba(12, 17, 84, 0.4) */
+/* Alpha determines the transparency */
+/* Alpha goes from 0-1 */
+h1 {
+  /* Setting alpha to zero will make element disappear (Fully transparent). Setting to 1 will make it NOT transparent */
+  color: rgba(0, 255, 0, 0.5);
+}

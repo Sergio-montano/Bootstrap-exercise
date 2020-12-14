@@ -1,0 +1,27 @@
+h4 {
+  /* CONTENT */
+  /* width: 250px; */
+  /* height: 250px; */
+  /* The length when using a percentage is determined by the length of the parent element (In this case it is the body element) */
+  width: 50%;
+
+  /* PADDING */
+  /* Creates space between content and border */
+  /* padding: 14px; */
+  /* padding-top: 33px; */
+  /* top right bottom left */
+  /* padding: 7px 30px 50px 90px; */
+  /* top/bottom left/right */
+  padding: 75px 2px;
+
+  /* BORDER */
+  border: 5px green dashed;
+
+  /* MARGIN */
+  /* Creates space between elements and/or the end of the window/viewport */
+  /* margin: 90px; */
+  /* Margin works the same as padding in regards to setting each side (top, right, etc.) */
+  /* Using "margin: auto" can be used to center an element */
+  margin: auto;
+  
+}

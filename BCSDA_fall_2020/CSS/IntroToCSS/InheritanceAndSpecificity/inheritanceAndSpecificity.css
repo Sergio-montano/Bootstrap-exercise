@@ -1,0 +1,42 @@
+/* INHERITANCE */
+/* Elements inside of the body tags inherit the style that is created */
+body {
+  color: coral;
+}
+
+/* SPECIFICITY */
+/* The div element is more specific to the p element because it is inside the body element */
+div {
+  color: firebrick;
+}
+
+h2 {
+  /* To change transparency on a hexidecimal color use two more characters (So 8 characters total instead of 6) */
+  color: #ccbbaa55;
+}
+
+/* Class selector is more specific than an element selector */
+.abc {
+  color: #aabbcc;
+}
+
+/* ID selector is more specific than a class selector */
+#def {
+  color: indigo;
+}
+
+.link {
+  background-color: lawngreen;
+}
+/* Attribute selector is more specific than a class selector because it includes an element */
+a[href="#"] {
+  background-color: orange;
+}
+
+#ghi {
+  background-color: darkblue;
+}
+/* An element will only inherit a style if it does not have one specifically set already */
+p {
+  background-color: yellow;
+}

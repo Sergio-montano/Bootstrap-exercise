@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+</head>
+
+<body>
+  <h1>Customer Experience Survey</h1>
+
+  <form>
+    <div>
+      <label>
+        Store Number
+        <!-- Select element -->
+        <!-- value attribute for option element not necessary if what you have between tags is something that can be displayed in a URL -->
+        <select name="storeNumber">
+          <option>3109</option>
+          <option>2421</option>
+          <option>5357</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Fieldset element -->
+    <fieldset>
+      <legend>When you visited:</legend>
+      <!-- Date Input -->
+      <label for="dateVisited">Date Visited</label>
+      <input type="date" id="dateVisited" name="dateVisited" min="2020-01-01" max="2020-12-31">
+      <!-- Time Input -->
+      <label for="timeVisited">Time:</label>
+      <input type="time" id="timeVisited" name="timeVisited">
+    </fieldset>
+
+    <div>
+      <!-- Text Input -->
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" placeholder="John">
+      <!-- Text Input -->
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Doe">
+    </div>
+
+    <div>
+      <!-- Email input -->
+      <label>
+        Email:
+        <input type="email" name="userEmail" placeholder="your email">
+      </label>
+    </div>
+
+    <div>
+      <!-- Radio inputs -->
+      <label for="male">Male</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="female">Female</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="other">Other</label>
+      <input type="radio" id="other" name="gender" value="other">
+    </div>
+
+    <div>
+      <!-- Text area -->
+      <label for="customerExperience">Tell us about your experience:</label>
+      <br>
+      <textarea name="customerExperience" id="customerExperience"></textarea>
+    </div>
+
+    <!-- Number input -->
+    <label for="timesVisted">Times visited in the last month:</label>
+    <input type="number" id="timesVisted" name="timesVisted" min="1" max="30">
+
+    <div>
+      <!-- Checkbox input -->
+      <label for="checkbox">Please check the box if you would be willing to be contacted about your experience</label>
+      <input type="checkbox" id="checkbox" name="agreeToBeContacted">
+    </div>
+
+    <!-- Resets all fields in form tags -->
+    <input type="reset">
+
+    <input type="submit">
+  </form>
+</body>
+
+</html>

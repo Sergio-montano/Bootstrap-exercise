@@ -1,0 +1,52 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+/* This would also work to set font for all text */
+/* body {
+  font-family: 'Lato', sans-serif;
+} */
+
+h2 {
+  letter-spacing: 3.2px;
+  font-weight: 700; /* or bold */
+  font-size: 48px;
+  /* rem sets the font size in relation to the root font size set for the webpage instead of the parent element */
+  /* font-size: 2rem; */
+  color: #3D3D3D;
+}
+
+p {
+  text-align: right;
+}
+
+hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+.main {
+  width: 80%;
+  border: 20px solid #BDC3C7;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 25px;
+}
+
+.middle {
+  border-top: 5px solid #BDC3C7;
+  border-bottom: 5px solid #BDC3C7;
+  padding: 20px 0;
+}
+
+.date {
+  color: #3498DB;
+  text-transform: uppercase;
+  float: right;
+}
+
+
+.section {
+  /* font-size: 70px; */
+}

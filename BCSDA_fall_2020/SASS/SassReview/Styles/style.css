@@ -1,0 +1,31 @@
+.nineties ul {
+  color: #ed1c24;
+  border: 3px solid #8fd129;
+}
+
+.eighties {
+  background-color: blue;
+  font-weight: bold;
+}
+
+.eighties h1 {
+  color: white;
+}
+
+.eighties ul {
+  color: #d92121;
+  border: 3px solid #d92121;
+}
+
+.nineties {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

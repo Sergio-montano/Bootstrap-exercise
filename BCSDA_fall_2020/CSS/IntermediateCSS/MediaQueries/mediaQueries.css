@@ -1,0 +1,56 @@
+body {
+  background-color: orange;
+}
+
+/* Remember to keep media queries at the end of your css file */
+/* When viewport width is 700px or less the background color will be hot pink */
+@media (max-width: 700px){
+  body {
+    background-color: hotpink;
+  }
+}
+
+@media (max-width: 500px){
+  h1 {
+    color: cyan;
+  }
+}
+
+/* When viewport is in landscape mode (width more than height) the h2 text will be uppercase */
+@media (orientation: landscape){
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+/* When viewport is in portrait mode (height more than width) AND width is less than 400px the h1 will have a 5px dashed black border */
+/* @media (orientation: portrait) and (max-width: 400px){
+  h1 {
+    border: 5px dashed black;
+  }
+} */
+
+/* When viewport is in portrait mode (height more than width) OR width is less than 400px the h1 will have a 5px dashed red border */
+@media (orientation: portrait), (max-width: 400px){
+  h1 {
+    border: 5px dashed red;
+    /* text-decoration: line-through; */
+  }
+}
+
+/* When viewport width is 800px or more the background color will be green */
+@media (min-width: 800px){
+  body {
+    background-color: green;
+  }
+  /* h1 {
+    background-color: cornflowerblue;
+  } */
+}
+
+/* When viewport height is 500px or more the background color will be black */
+@media (min-height: 500px){
+  body {
+    background-color: black;
+  }
+}
